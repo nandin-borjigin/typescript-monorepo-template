@@ -4,9 +4,18 @@
   "editor.codeActionsOnSave": {
     "source.fixAll": true
   },
+
+  "eslint.enable": true,
+
   "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
   "explorer.fileNesting.patterns": {
-    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, pnpm-workspace.yaml, .prettierrc*, .gitignore"
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, pnpm-workspace.yaml, .prettierrc*, .eslint*, .gitignore",
+    "tsconfig.json": "tsconfig.*.json, tsconfig.tsbuildinfo"
+  },
+
+  "files.exclude": {
+    "*/**/node_modules": true
   },
   "files.insertFinalNewline": true
 }

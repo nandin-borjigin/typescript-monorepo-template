@@ -1,0 +1,16 @@
+env:
+  browser: true
+  es2021: true
+extends:
+  - standard-with-typescript
+  - prettier
+overrides: []
+parserOptions:
+  ecmaVersion: latest
+  sourceType: module
+
+plugins:
+  - implicit-dependencies
+rules:
+  implicit-dependencies/no-implicit: error
+  "@typescript-eslint/return-await": "in-try-catch"
